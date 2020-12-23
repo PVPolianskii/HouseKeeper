@@ -25,9 +25,6 @@ public class PriceController {
         price.setPrice(priceRequest.getPrice());
 
         priceRepository.save(price);
-
-
-
-
     }
+
 }

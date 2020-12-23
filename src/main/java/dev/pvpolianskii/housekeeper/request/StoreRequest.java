@@ -14,7 +14,7 @@ import javax.validation.constraints.Positive;
 @AllArgsConstructor
 @Getter
 @Setter
-public class StoreCreationRequest {
+public class StoreRequest {
 
     @JsonProperty(value = "storeName")
     @NotEmpty

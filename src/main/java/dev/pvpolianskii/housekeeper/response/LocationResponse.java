@@ -21,7 +21,7 @@ public class LocationResponse {
 
     public static LocationResponse fromEntity(Location location) {
 
-        LocationResponse locationResponse = LocationResponse.builder()
+        return LocationResponse.builder()
                 .name(location.getName())
                 .settlementType(location.getSettlementType())
                 .settlementName(location.getSettlementName())
@@ -30,19 +30,7 @@ public class LocationResponse {
                 .housing(location.getHousing())
                 .apartment(location.getApartment())
                 .build();
-
-        return locationResponse;
     }
 
 
-//    public LocationResponse(Location location) {
-//        this.name = location.getName();
-//        this.settlementType = location.getSettlementType();
-//        this.settlementName = location.getSettlementName();
-//        this.street = location.getStreet();
-//        this.building = location.getBuilding();
-//        this.housing = location.getHousing();
-//        this.apartment = location.getApartment();
-//
-//    }
 }
