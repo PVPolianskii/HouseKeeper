@@ -1,4 +1,4 @@
-package dev.pvpolianskii.housekeeper;
+package dev.pvpolianskii.housekeeper.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -14,7 +14,7 @@ import javax.validation.constraints.Positive;
 @AllArgsConstructor
 @Getter
 @Setter
-public class GoodsCreationRequest {
+public class GoodsRequest {
 
     @JsonProperty(value = "goodsName")
     @NotEmpty

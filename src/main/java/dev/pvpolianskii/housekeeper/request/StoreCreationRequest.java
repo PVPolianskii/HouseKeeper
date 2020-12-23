@@ -1,4 +1,4 @@
-package dev.pvpolianskii.housekeeper;
+package dev.pvpolianskii.housekeeper.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

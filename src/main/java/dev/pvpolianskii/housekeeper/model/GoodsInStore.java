@@ -1,5 +1,7 @@
-package dev.pvpolianskii.housekeeper;
+package dev.pvpolianskii.housekeeper.model;
 
+import dev.pvpolianskii.housekeeper.model.Goods;
+import dev.pvpolianskii.housekeeper.model.Store;
 import lombok.Getter;
 import lombok.Setter;
 

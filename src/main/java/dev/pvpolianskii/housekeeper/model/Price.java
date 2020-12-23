@@ -1,8 +1,7 @@
-package dev.pvpolianskii.housekeeper;
+package dev.pvpolianskii.housekeeper.model;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
+import dev.pvpolianskii.housekeeper.model.Goods;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -11,7 +10,9 @@ import java.time.LocalDateTime;
 @Table(name = "price")
 @Getter
 @Setter
-
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 
 public class Price {
 
@@ -24,7 +25,6 @@ public class Price {
     private Goods goods;
 
     @Column(name = "date")
-//    @CreationTimestamp
     private LocalDateTime localDateTime;
 
     @Column(name = "price")

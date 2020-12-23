@@ -1,20 +1,19 @@
-package dev.pvpolianskii.housekeeper;
+package dev.pvpolianskii.housekeeper.model;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "goods")
+@Table(name = "store")
 @Getter
 @Setter
 
-
-public class Goods {
-
+public class Store {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,16 +22,12 @@ public class Goods {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "note")
-    private String note;
+    @ManyToOne
+    @JoinColumn(name = "location_id")
+    private Location location;
 
-    @OneToMany(mappedBy = "goods", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "store")
     private List<GoodsInStore> listGoodsInStore = new ArrayList<>();
-
-    @OneToMany(mappedBy = "goods", cascade = CascadeType.PERSIST)
-    private List<Price> prices = new ArrayList<>();
-
-
 
 
 }
