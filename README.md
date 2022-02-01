@@ -1,6 +1,6 @@
 #HouseKeeper
 
-Pet project to keep track of things
+Pet project for accounting and storing different things in different places of the house
 
 Technologies 
 
