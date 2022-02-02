@@ -2,7 +2,7 @@
 
 Pet project for accounting and storing different things in different places of the house
 
-Technologies 
+Technologies:
 
 * JDK 1.8
 * Spring Boot
